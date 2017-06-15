@@ -8,6 +8,17 @@
     <modules>
         <module>di</module>
         <module>nio</module>
+        <module>aop</module>
+        <module>springback</module>
+        <module>taomeenetty</module>
+        <module>taomee_protobuf</module>
+        <module>spring-boot-netty-protobuf</module>
+        <module>taomeekafka</module>
+        <module>tm-kafka</module>
+        <module>tm-kafka-0.8.1.1</module>
+        <module>tm-kafka-0.10.1.1</module>
+        <module>taomee-storm</module>
+        <!--<module>web</module>-->
     </modules>
     <packaging>pom</packaging>
 
@@ -20,9 +31,36 @@
         <hsqldb.version>2.3.2</hsqldb.version>
         <dbh2.version>1.4.187</dbh2.version>
         <derby.version>10.11.1.1</derby.version>
+        <aspectjrt.version>1.5.4</aspectjrt.version>
+        <aspectjweaver.version>1.8.9</aspectjweaver.version>
+        <servlet.version>2.5</servlet.version>
+        <jstl.version>1.2</jstl.version>
+        <mysql.connector.version>5.1.34</mysql.connector.version>
+        <hibernate.version>4.2.13.Final</hibernate.version>
+        <netty_version>3.2.5.Final</netty_version>
+
+        <!--<netty_version>4.1.11.Final</netty_version>-->
     </properties>
 
     <dependencies>
+
+       <!-- <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring_jpa_version}</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>4.2.0.Final</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -30,16 +68,52 @@
         </dependency>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.9</version>
-            <scope>test</scope>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc-portlet</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- mysql连接 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
         </dependency>
 
         <!-- HyperSQL DB -->
@@ -62,5 +136,50 @@
             <artifactId>derby</artifactId>
             <version>${derby.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Spring aop libs Begin -->
+        <dependency>
+            <groupId>aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspectjrt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.version}</version>
+        </dependency>
+        <!-- Spring aop libs End -->
     </dependencies>
+
+    <!--common lib 公共库-->
+    <dependencyManagement>
+        <dependencies>
+            <!-- netty的依赖包 -->
+            <!--<dependency>
+                <groupId>org.jboss.netty</groupId>
+                <artifactId>netty</artifactId>
+                <version>${netty_version}</version>
+            </dependency>-->
+
+            <!--单元测试依赖库-->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.9</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>5.0.0.Alpha1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

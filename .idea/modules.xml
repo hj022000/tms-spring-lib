@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aop/aop.iml" filepath="$PROJECT_DIR$/aop/aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/di/di.iml" filepath="$PROJECT_DIR$/di/di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nio/nio.iml" filepath="$PROJECT_DIR$/nio/nio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-netty-protobuf/spring-boot-netty-protobuf.iml" filepath="$PROJECT_DIR$/spring-boot-netty-protobuf/spring-boot-netty-protobuf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springback/springback.iml" filepath="$PROJECT_DIR$/springback/springback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taomee-storm/taomee-storm.iml" filepath="$PROJECT_DIR$/taomee-storm/taomee-storm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taomee_protobuf/taomee_protobuf.iml" filepath="$PROJECT_DIR$/taomee_protobuf/taomee_protobuf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taomeenetty/taomeenetty.iml" filepath="$PROJECT_DIR$/taomeenetty/taomeenetty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tm-kafka/tm-kafka.iml" filepath="$PROJECT_DIR$/tm-kafka/tm-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tm-kafka-0.10.1.1/tm-kafka-0.10.1.1.iml" filepath="$PROJECT_DIR$/tm-kafka-0.10.1.1/tm-kafka-0.10.1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tm-kafka-0.8.1.1/tm-kafka-0.8.1.1.iml" filepath="$PROJECT_DIR$/tm-kafka-0.8.1.1/tm-kafka-0.8.1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tms-spring-lib.iml" filepath="$PROJECT_DIR$/tms-spring-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+    </modules>
+  </component>
+</project>
